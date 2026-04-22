@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Fitness Coach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <h1>AI Fitness Coach</h1>
+    <p>Get your personalized workout & meal plan instantly</p>
+    <button onclick="scrollToForm()">Start Now</button>
+  </section>
+
+  <section class="generator" id="formSection">
+    <div class="card">
+      <h2>Create Your Plan</h2>
+
+      <form id="fitnessForm">
+        <input type="number" placeholder="Age" id="age" required>
+        <input type="number" placeholder="Weight (kg)" id="weight" required>
+
+        <select id="goal">
+          <option value="lose fat">Lose Fat</option>
+          <option value="gain muscle">Gain Muscle</option>
+        </select>
+
+        <select id="level">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+        </select>
+
+        <button type="submit">Generate Plan</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="results">
+    <div id="result"></div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
